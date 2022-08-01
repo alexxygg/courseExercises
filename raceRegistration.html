@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Race Registration</title>
+  </head>
+  <body>
+    <h1>Race Registration</h1>
+
+    <form action="sdhshjjdshhds">
+      <label for="first"
+        >First Name:
+        <input type="text" required name="first" id="first" />
+      </label>
+      <label for="last"
+        >Last Name:
+        <input type="text" id="last" name="last" required />
+      </label>
+      <div>
+        <p>Select lenght of race!</p>
+      </div>
+      <div>
+        <label for="5km">
+          <input
+            type="radio"
+            id="5km"
+            name="racelenght"
+            required
+            value="5km"
+          />5 kilometers
+        </label>
+      </div>
+      <div>
+        <label for="21km">
+          <input
+            type="radio"
+            name="racelenght"
+            id="21km"
+            required
+            value="21km"
+          />21 kilometers (Half Marathon)
+        </label>
+      </div>
+      <div>
+        <label for="42km">
+          <input
+            type="radio"
+            name="racelenght"
+            id="42km"
+            required
+            value="42km"
+          />42 kilometers (Full Marathon)
+        </label>
+      </div>
+      <div>
+        <label for="email"
+          >Email:
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label for="password"
+          >Password:
+          <input type="password" name="password" id="password" required />
+        </label>
+      </div>
+      <div>
+        <label for="age"
+          >Select your age group:
+          <select name="agegroup" id="agegroup" required>
+            <option value="less18">Under 18.</option>
+            <option value="less25">Between 18 and 25</option>
+            <option value="less40">Between 26 and 40</option>
+            <option value="40ormore">More than 40 years old.</option>
+          </select>
+        </label>
+      </div>
+      <button>Register</button>
+    </form>
+
+    <p>Outcome url after completing form.</p>
+    <p>
+      file:///home/alejandro/courseExcercises/courseExercises/sdhshjjdshhds?first=s&last=s&racelenght=21km&email=s%40f&password=s&agegroup=less25
+    </p>
+  </body>
+</html>

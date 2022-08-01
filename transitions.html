@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <link rel="stylesheet" href="transitions.css" />
+  </head>
+  <body>
+    <h1>Transitions</h1>
+    <p>Transitions are really fun!</p>
+    <p>They help us animate our websites and look cool while they´re at it.</p>
+    <p>
+      We set the div:hover to do a few things. We have changed the
+      background-color to cyan when hovering on the elements. Also, the boxes
+      will cahnge to circles when hovered since we modified the border-radius to
+      50%. And we added a left-margin of 500px to have it slide to the right
+      when in the content element area, which is wrpping all the divs.
+    </p>
+    <p>
+      The transition: has been set to 3 seconds on the div element, since they
+      are all div boxes anyway.
+    </p>
+    <section>
+      <div class="one">ease-in</div>
+      <p>
+        The red one has a transition timing function called ease-in. This one is
+        slower at the beginning.
+      </p>
+      <div class="two">ease-out</div>
+      <p>The orange one was set to ease-out. This one is slower at the end.</p>
+      <div class="three">steps(5)</div>
+      <p>
+        The yellow one has been set to steps(5). It moves down the 200px in 3
+        seconds like the rest, but in 5 steps.
+      </p>
+      <div class="four">linear</div>
+      <p>
+        The green one has a linear function, it goes at the same spped the whole
+        way.
+      </p>
+      <div class="five">ease-in-out</div>
+      <p>
+        This one has been set to eas-in-out, so it is fast in the middle, and
+        slow at the beginning and end.
+      </p>
+      <div class="six"></div>
+      <div class="seven"></div>
+      <div class="eight"></div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="flexbox.css" />
+  </head>
+  <body>
+    <h1>Let´s play with FLEXBOX</h1>
+    <p>
+      Below is a section wih 5 divs inside it, they would normally be
+      block-level, meaning they would take up their height all the way to the
+      end of the screen(right side), but since display was set to flex, they are
+      behaving like columns.
+    </p>
+    <p>The main axis goes left to right.</p>
+    <p>The cross axis goes up to down.</p>
+    <hr />
+    <h2>This is how they look without any flexbox property.</h2>
+    <section id="noflexbox">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </section>
+    <hr />
+    <h2>And here it is set to display:flex.</h2>
+    <p>
+      The default for flex is flex-diretion: row. Adding it would not make any
+      changes.
+    </p>
+    <section id="flexbox">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </section>
+    <hr />
+    <h2>This is display:flex with flex-direction: row-reverse.</h2>
+    <p>Our divs are now starting from right to left, but still in a row.</p>
+    <section id="rowreverse">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </section>
+    <hr />
+    <h2>This is flex-direction: column.</h2>
+    <p>
+      The divs are going from top to bottom, it looks just like originally when
+      display:flex was turned off, but the difference is that if the height of
+      our container section was less, so as that the divs could not fit in it,
+      theye would adjust to whatever that size was. The very first example would
+      have the divs flying off the container, conserving their sizes.
+    </p>
+    <section id="column">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </section>
+    <hr />
+    <h2>
+      And this is flex-direction: column-reverse. It acts like row-reverse, but
+      fitting in the container again.
+    </h2>
+    <section id="columnreverse">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </section>
+    <hr />
+    <h2>justify-content: flex-start</h2>
+    <p>
+      This is the default value for justify content, so it would be the same to
+      have it or not when we are dealing with a row.
+    </p>
+    <section id="rowflexstart">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </section>
+    <hr />
+    <h2>justify-content: flex-end</h2>
+    <p>
+      This one pushes the divs to the right, since they were sent to the end of
+      our container.
+    </p>
+    <section id="rowflexend">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </section>
+    <hr />
+    <h2>justify-content: center</h2>
+    <p>
+      This one takes the left over space and divides it in two, half to the left
+      and half to the right, with the divs right next to each other at the
+      center.
+    </p>
+    <section id="rowcenter">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </section>
+    <hr />
+    <h2>justify-content: space-between</h2>
+    <p>
+      This one takes all the space left over and divides it to be split equally
+      between each div, with the first and last div touching the edges of the
+      container.(splits space between elements, not between elements including
+      container.)
+    </p>
+    <section id="rowspacebetween">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </section>
+    <hr />
+    <h2>justify-content: space-around</h2>
+    <p>
+      This one splits the space equally for each side of a div, which is why it
+      has half the space on the outer limits getting close to the container
+      edges.
+    </p>
+    <p>
+      It can be seen as if each side had an invisible margin, and since some
+      divs are next to each other, it is double on that side compared to one
+      which may share one of its sides with the container edge.
+    </p>
+    <section id="rowspacearound">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </section>
+    <hr />
+    <h2>justify-content: space-evenly</h2>
+    <p>
+      This one spaces all the space in exactly the same amounts between each div
+      and between the divs that are next to the container limits.
+    </p>
+    <section id="rowspaceevenly">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </section>
+    <hr />
+  </body>
+</html>

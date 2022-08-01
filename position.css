@@ -1,0 +1,39 @@
+div {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+#static {
+  position: static;
+  top: 25px;
+  left: 25px;
+}
+#relative {
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+#absolute {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+#sticky {
+  position: sticky;
+  top: 0px;
+}
+.div1 {
+  background-color: seagreen;
+}
+.div2 {
+  background-color: royalblue;
+}
+.div3 {
+  background-color: khaki;
+}
+.div4 {
+  background-color: indianred;
+}
+body {
+  margin-top: 200px;
+}

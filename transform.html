@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <link rel="stylesheet" href="transform.css" />
+  </head>
+  <body>
+    <h1>Transform</h1>
+    <p>
+      Transform helps us make changes to the content we decide to transform.
+    </p>
+    <p>
+      It is important to know that if we have various elements in a parent
+      element, and we transform that parent, all the children will also be
+      changed.
+    </p>
+    <p>
+      Also, any elements inside a div, paragraph or the element we transform
+      will be affected, be a button or anything else.
+    </p>
+    <hr />
+    <div>ORIGINAL REFERENCE</div>
+    <hr />
+    <section>
+      <div>transform: rotate(10deg);</div>
+      <p>This transform rotates our div by 10 degrees.</p>
+      <hr />
+      <div>transform: scale(1.2);</div>
+      <p>
+        This transform makes our div 1.2 times as big as originally, it can be
+        0.5 to make it half of the original size.
+      </p>
+      <hr />
+      <div>transform: translateX(100px);</div>
+      <p>
+        This transform moves our div in the x axis (horizontal axis) by 100 px.
+        We can use negative values here to move it to the left.
+      </p>
+      <hr />
+      <div>transform: translate(-50px, 30px);</div>
+      <p>
+        This transform moves our div to the left by 50px, then moves it down the
+        y axis by 30px.
+      </p>
+      <p>We had to give this one a margin-bottom to see this text.</p>
+    </section>
+    <hr />
+    <section>
+      <div>transform: skew(20deg);</div>
+      <p>
+        This transform acts as if we were pulling it from a corner, it was set
+        to 20 degrees.
+      </p>
+      <div>transform: skew(10deg, 5deg);</div>
+      <p>
+        This transform does the same as the previous, but it was pulled from the
+        x and y axis by 10 and 50 degrees respectively.
+      </p>
+      <hr />
+      <h2>Combining transform properties.</h2>
+      <div>transform: rotate(10deg) scale(0.7);</div>
+      <p>
+        This transform rotates our div by 10 degrees, and is also scaled down to
+        0.7, leaving our box 70% as big as it was originally.
+      </p>
+      <div>transform: translateX(-200px) rotate(180deg);</div>
+      <p>
+        This transform moves our div 200px to the left, which is why it is a
+        negative value first, and then rotates our box by 180 degrees, leaving
+        it upside down.
+      </p>
+      <p>The text is------transform: translateX(-200px) rotate(180deg);</p>
+    </section>
+  </body>
+</html>

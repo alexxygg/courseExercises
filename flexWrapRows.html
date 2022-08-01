@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-wrap</title>
+    <link rel="stylesheet" href="flexWrapRows.css" />
+  </head>
+  <body>
+    <h1>flex-wrap ROWS</h1>
+    <p>
+      Flex wrap helps us determine the behavior our divs, or any element we are
+      using, will have when it runs out of space to have its full size.
+    </p>
+    <h2>No flex-wrap</h2>
+    <p>
+      Here we have 5 divs, which are each 45px by 45px for width and height with
+      a border of 5px. They are inside a container that is only 120px in height.
+    </p>
+    <p>
+      They do not fit and as a consequence look like they are overflowing. There
+      is no flex declared for this original example.
+    </p>
+    <section id="containersnowrap">
+      <section id="container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+      <section id="containerlong">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+    </section>
+    <hr />
+    <h2>Rows</h2>
+
+    <h2>flex-wrap</h2>
+    <p>Here is the same example, but with display: flex.</p>
+    <p>We also set flex-wrap: wrap.</p>
+    <p>The divs wrap around once they can´t fit and go to the next column.</p>
+    <p>And they can have the justify-content styled as wished too.</p>
+    <h2>This is justify-content: flex-start (THE DEFAULT)</h2>
+    <section id="containers">
+      <section id="rowflexwrapflexstart">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+      <section id="rowflexwrapflexstart2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+    </section>
+    <h2>justify-content: flex-end</h2>
+    <section id="containers">
+      <section id="rowflexwrapflexend">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+      <section id="rowflexwrapflexend2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+    </section>
+
+    <h2>justify-content: center</h2>
+    <section id="containers">
+      <section id="rowflexwrapcenter">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+      <section id="rowflexwrapcenter2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+    </section>
+
+    <h2>justify-content: space-between</h2>
+    <section id="containers">
+      <section id="rowflexwrapspacebetween">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+      <section id="rowflexwrapspacebetween2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+    </section>
+
+    <h2>justify-content: space-around</h2>
+    <section id="containers">
+      <section id="rowflexwrapspacearound">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+      <section id="rowflexwrapspacearound2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+    </section>
+
+    <h2>justify-content: space-evenly</h2>
+    <section id="containers">
+      <section id="rowflexwrapspaceevenly">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+      <section id="rowflexwrapspaceevenly2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+    </section>
+
+    <hr />
+    <h2>flex-wrap: wrap-reverse</h2>
+    <p>This one also wraps our divs, but in reverse order.</p>
+    <h2>This is justify-content: flex-start (THE DEFAULT)</h2>
+    <section id="containers">
+      <section id="rowflexwrapreverse">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+      <section id="rowflexwrapreverse2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+      </section>
+    </section>
+
+    <hr />
+  </body>
+</html>

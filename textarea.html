@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>textarea Element</title>
+  </head>
+  <body>
+    <h1>The textarea element</h1>
+    <p>This is not an input, but its very own element.</p>
+    <p>
+      These boxes are used when asking a user for things like feedback,
+      additional notes or specific details.
+    </p>
+    <p>The default row lenght is 10.</p>
+    <p>The default column height is 30.</p>
+    <label for="feedback"
+      >Any comments, questions or concerns? Send us some feedback!</label
+    >
+    <hr />
+    <textarea
+      name="feedback"
+      id="feedback"
+      cols="30"
+      rows="10"
+      placeholder="Enter your feedback here."
+    ></textarea>
+    <button>Submit feedback.</button>
+    <hr />
+    <p>This is the same, except the dimensions are reversed.</p>
+    <label for="feedback"
+      >Any comments, questions or concerns? Send us some feedback!</label
+    >
+    <hr />
+    <textarea
+      name="feedback"
+      id="feedback"
+      cols="10"
+      rows="30"
+      placeholder="Enter your feedback here."
+    ></textarea>
+    <button>Submit feedback.</button>
+  </body>
+</html>

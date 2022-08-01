@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>align-items</title>
+    <link rel="stylesheet" href="alignItems.css" />
+  </head>
+  <body>
+    <h1>align-items</h1>
+    <p>
+      This property helps us align the items, but it is done on the Y azis,
+      starting at the top and ending in the bottom.
+    </p>
+    <hr />
+    <h2>align-items: center</h2>
+    <p>Here are some divs with display:flex and align-items:center.</p>
+    <section id="alignitemscenter">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </section>
+    <hr />
+    <h2>align-items: flex-start</h2>
+
+    <section id="alignitemsflexstart">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </section>
+    <hr />
+    <h2>align-items: flex-end</h2>
+
+    <section id="alignitemsflexend">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </section>
+    <hr />
+    <h2>align-items: baseline</h2>
+    <p>This one works in relation to the text or content size.</p>
+    <p>We changed the size of the text and divs to see the results.</p>
+    <p>
+      The divs are aligned to have the text in the same line, regardless of the
+      position of each div.
+    </p>
+    <section id="alignitemsbaseline">
+      <div class="a">H</div>
+      <div class="b">E</div>
+      <div class="c">L</div>
+      <div class="d">L</div>
+      <div class="e">O</div>
+    </section>
+    <hr />
+    <h1>justify-content + align-items</h1>
+    <p>
+      Using these togethere allows us to do a lot more than individually, since
+      we have access to the x and y axis.
+    </p>
+    <hr />
+    <h2>justify-content: center; + align-items: center;</h2>
+    <p>Just a few examples:</p>
+    <p>
+      We centered it from the left and right, and then from top to bottom,
+      leaving it in the exact center.
+    </p>
+    <section id="centercenter">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </section>
+    <hr />
+    <h2>justify-content: space-evenly; + align-items: flex-start;</h2>
+    <section id="spaceevenlystart">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </section>
+    <hr />
+    <h2>justify-content: space-around; + align-items: flex-end;</h2>
+    <section id="spacearoundend">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </section>
+    <hr />
+    <h2>justify-content: center; + align-items: flex-end;</h2>
+    <section id="centerend">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </section>
+    <hr />
+  </body>
+</html>

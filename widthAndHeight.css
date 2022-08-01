@@ -1,0 +1,14 @@
+div p {
+  width: 200px;
+  height: 200px;
+}
+p {
+  background-color: lightskyblue;
+}
+h1 {
+  background-color: lightseagreen;
+}
+h2 {
+  background-color: lightseagreen;
+  width: 300px;
+}

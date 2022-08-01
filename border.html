@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+    <link rel="stylesheet" href="border.css" />
+  </head>
+  <body>
+    <h1>Border</h1>
+    <p>
+      The border goes aroound the padding and content box. They are around every
+      box.
+    </p>
+    <p>
+      Some have rounded corners or may even look like a circle thanks to
+      changing styles.
+    </p>
+    <p>
+      We can style all borders, just one, just two or just three. It can be top
+      and bottom, left and right, or any other combination we want.
+    </p>
+    <h2>Border Properties</h2>
+    <p>
+      The properties are border-width, border-color and border-style. The first
+      controls the thickness, the second the color and the third the type of
+      line style(solid, dashed,etc.).
+    </p>
+    <p>The paragraph below has all 3 properties changed.</p>
+    <div class="properties">
+      <p>
+        This is an example. No changes to width and height. The border-width is
+        5px, the border-color is purple and the border-style is solid.
+      </p>
+    </div>
+    <p>Now here are 3 paragraphs, they are all set to a width of 400px.</p>
+
+    <p>The first does not have a background-color or border styled.</p>
+    <div class="first">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae
+        vero ipsum ex excepturi voluptas, eum, ut sit deleniti possimus
+        asperiores quaerat harum dolore. Optio reprehenderit ad odit beatae
+        tempore!
+      </p>
+    </div>
+    <p>The second has a background-color.</p>
+    <div class="second">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugit ipsa
+        placeat voluptatibus optio unde tempora expedita dolorem modi animi,
+        atque omnis doloribus doloremque ducimus possimus, at sunt quas sed.
+      </p>
+    </div>
+    <p>The third has a background-color and a border styled.</p>
+    <div class="third">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At quisquam
+        nobis ratione vero necessitatibus harum iure architecto vel non cum
+        reiciendis debitis dolorum soluta totam, animi fugiat veritatis
+        exercitationem repellat.
+      </p>
+    </div>
+    <p>
+      As you can see, the third is now wider than the second, even though we set
+      the width to 400px for all 3. And even the second looks a little wider
+      than the first because of the background-color.
+    </p>
+    <p>
+      The width of the third paragraph is now 420px because of the 10px border.
+    </p>
+    <p>
+      We can change this with the box-sizing option and setting it to
+      border-box.
+    </p>
+    <p>We did so below:</p>
+    <div class="fourth">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At quisquam
+        nobis ratione vero necessitatibus harum iure architecto vel non cum
+        reiciendis debitis dolorum soluta totam, animi fugiat veritatis
+        exercitationem repellat.
+      </p>
+    </div>
+    <div class="fifth">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At quisquam
+        nobis ratione vero necessitatibus harum iure architecto vel non cum
+        reiciendis debitis dolorum soluta totam, animi fugiat veritatis
+        exercitationem repellat.
+      </p>
+    </div>
+    <p>
+      Even though the border styled paragraph still has a 10px border, this time
+      it does not add it on top of the 400px width, it instead substracts it,
+      leaving box boxes looking the same!
+    </p>
+  </body>
+  <h2>Other examples.</h2>
+  <div class="six">
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate amet
+      nesciunt dignissimos aspernatur recusandae perferendis sint nemo adipisci
+      minus assumenda ducimus aut, quia repudiandae nihil aliquid quam
+      voluptatum, mollitia molestiae.
+    </p>
+    <p>This one has the left and bottom borders styled to 5px green dotted!</p>
+  </div>
+  <h2>Border radius</h2>
+  <p>
+    This helps us make different shapes. It is normally used with percentages.
+  </p>
+  <p>
+    a border-radius of 10px will give us slightly rounded corners, but one of
+    50% will give us a circle.
+  </p>
+  <p>It can also be applied to only one, two, three or all corners.</p>
+  <div class="seven">
+    <p>This paragraph has a border radius of 50%.</p>
+  </div>
+  <div class="eight">
+    <p>This one two, but a width of 100px.</p>
+  </div>
+  <div class="nine">
+    <p>Slight rounded corners on top left and bottom right!</p>
+  </div>
+  <h2>With a picture inside!</h2>
+  <div class="card"></div>
+    <img src="nftDeath.jpeg" alt="" />
+    <h3>NFT´s are dead..</h3>
+  </div>
+</html>
